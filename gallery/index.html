@@ -1073,103 +1073,32 @@
     <div class="innerbody">
       <div class="container">
         <div class="white_bg">
-          <div class="row">
+          <div class="row" id="allimages">
+            <script>
+              const files = ['0U5A2695.JPG', '0U5A2747.JPG', '0U5A2794.JPG',
+                'IMG-20240910-WA0021.jpg', '0U5A2703.JPG', '0U5A2749.JPG',
+                'IMG-20240910-WA0012.jpg', 'IMG-20240910-WA0023.jpg',
+                '0U5A2707.JPG', '0U5A2758.JPG', 'IMG-20240910-WA0013.jpg',
+                'IMG-20240910-WA0024.jpg', '0U5A2710.JPG', '0U5A2762.JPG',
+                'IMG-20240910-WA0015.jpg', 'IMG-20240910-WA0026.jpg',
+                '0U5A2716.JPG', '0U5A2771.JPG', 'IMG-20240910-WA0017.jpg',
+                'printed-reel.jpg', '0U5A2722.JPG', '0U5A2780.JPG']
+              const onehtml = (name)=> `
             <div class="col-sm-4">
               <div class="gallery-img">
-                <a
-                  class="fancybox"
-                  rel="ligthbox"
-                  href="/wp-content/uploads/2020/02/IMG_7591-1200x900.jpg"
-                  title="Image1"
-                >
+                <a class="fancybox" rel="ligthbox"
+                  href="images/${name}"
+                  title="Image" >
                   <img
-                    src="/wp-content/uploads/2020/02/IMG_7591-1200x900.jpg"
-                    alt=""
-                    class="img-thumbnail img-responsive"
-                  />
+                    src="images/${name}"
+                    alt="" class="img-thumbnail img-responsive" />
                 </a>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="gallery-img">
-                <a
-                  class="fancybox"
-                  rel="ligthbox"
-                  href="/wp-content/uploads/2020/02/IMG_7583-1200x1600.jpg"
-                  title="Image2"
-                >
-                  <img
-                    src="/wp-content/uploads/2020/02/IMG_7583-1200x1600.jpg"
-                    alt=""
-                    class="img-thumbnail img-responsive"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="gallery-img">
-                <a
-                  class="fancybox"
-                  rel="ligthbox"
-                  href="/wp-content/uploads/2020/02/IMG_7559-1200x1600.jpg"
-                  title="Image3"
-                >
-                  <img
-                    src="/wp-content/uploads/2020/02/IMG_7559-1200x1600.jpg"
-                    alt=""
-                    class="img-thumbnail img-responsive"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="gallery-img">
-                <a
-                  class="fancybox"
-                  rel="ligthbox"
-                  href="/wp-content/uploads/2020/02/IMG_7558-1200x1600.jpg"
-                  title="Image4"
-                >
-                  <img
-                    src="/wp-content/uploads/2020/02/IMG_7558-1200x1600.jpg"
-                    alt=""
-                    class="img-thumbnail img-responsive"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="gallery-img">
-                <a
-                  class="fancybox"
-                  rel="ligthbox"
-                  href="/wp-content/uploads/2020/02/IMG_7589-1200x1600.jpg"
-                  title="Image5"
-                >
-                  <img
-                    src="/wp-content/uploads/2020/02/IMG_7589-1200x1600.jpg"
-                    alt=""
-                    class="img-thumbnail img-responsive"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="gallery-img">
-                <a
-                  class="fancybox"
-                  rel="ligthbox"
-                  href="/wp-content/uploads/2020/02/IMG_7577-1200x1600.jpg"
-                  title="Image6"
-                >
-                  <img
-                    src="/wp-content/uploads/2020/02/IMG_7577-1200x1600.jpg"
-                    alt=""
-                    class="img-thumbnail img-responsive"
-                  />
-                </a>
-              </div>
-            </div>
+            `;
+            const s = files.map(onehtml).join('\n');
+            document.getElementById('allimages').innerHTML = s;
+            </script>
           </div>
         </div>
       </div>
