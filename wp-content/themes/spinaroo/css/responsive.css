@@ -68,11 +68,6 @@
     text-align: left;
   }
 
-  .newsletter_area p {
-    line-height: 16px;
-    font-size: 13px;
-  }
-
   .white_bg,
   .contact-form,
   .career_form {
@@ -115,7 +110,6 @@
   .home_block,
   .innerbody,
   .home_about,
-  .newsletter_area,
   .featured_products.related_product {
     padding: 26px 0;
   }
@@ -409,22 +403,7 @@
   }
 
   .newsletter_area {
-    padding: 26px 0;
-  }
-
-  .newsletter_area h2 {
-    font-size: 19px;
-  }
-
-  .newsletter_area .es_textbox {
-    width: 100%;
-  }
-
-  .newsletter_area input[type="email"],
-  .newsletter_area input[type="submit"] {
-    border-radius: 12px;
-    margin-top: 16px;
-    width: 100%;
+    padding: 10px 0;
   }
 
   .inner_content_area ul.ul_list {
