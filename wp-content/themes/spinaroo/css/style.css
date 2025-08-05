@@ -447,6 +447,10 @@ ul.footer_contact li {
   margin-bottom: 12px;
 }
 
+ul.footer_contact li:nth-child(2){
+  display: none;
+}
+
 ul.footer_contact li span {
   position: absolute;
 
